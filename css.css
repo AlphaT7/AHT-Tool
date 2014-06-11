@@ -41,6 +41,7 @@ width: 1000%;
 height: 1000%;
 }
 #interface_content{
+box-sizing: border-box;
 position: absolute;
 margin: 5% 0 0 5%;
 width: 90%;
@@ -58,6 +59,12 @@ white-space: normal;
 margin: 20px 0 20px 0;
 font-size: 15pt;
 }
+
+#interface #interface_content .ititle .ititle_content{
+    background: #3276b1;
+    width: 100%;
+}
+        
 .interface_top_menu{
 margin: 0 0 10px 0;
 float: left;
@@ -66,19 +73,44 @@ height: 50px;
 border: 1px solid white;
 
 }
-.interface_tools_right{
-margin: 0 14px 0 0;
-float: right;
-width: 291px;
-height: 380px;
-border: 1px solid white;
+.notice{
+    margin: 0 14px 0 0;
+    float: right;
+    width: 291px;
+    height: 384px;
+    border: 1px solid #fff;
+    overflow-y: scroll;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.notice_content{
+	padding: 10px;
+    color: #fff;
+    font-size: 10pt;
+    z-index: 7000;
+    float: left;
+}
+.notice_content li{
+    margin: 0 0 20px -25px;
+}
+.notice_bg{
+    top: -155%;
+    position: relative;
+    background: #fff;
+    filter:alpha(opacity=10);
+    width: 100%;
+    height: 1000%;
+    z-index: -7000;
+}
+.notice .notice_content .ititle{
+    background: #3276b1;
 }
 .interface_bottom_menu{
 margin-top: 10px;
 float: left;
 width: 98%;
 height: 50px;
-border: 1px solid white;
+/*border: 1px solid #fff;*/
 }
 .ititle{
 border:1px solid #fff;
@@ -115,10 +147,13 @@ filter:alpha(opacity=80);
 
 /* --- B U T T O N    C L A S S E S --- */
 
+.bottom_buttons{
+	width: 140px;
+	height: 30px;
+}
+
 .button_frame{
 	overflow: hidden;
-	width: 150px;
-	height: 30px;
 	float: left;
 	position: relative;
 	border: 1px solid white;
@@ -128,7 +163,7 @@ filter:alpha(opacity=80);
 	cursor: pointer;
 }
 .button_content{
-	padding: 3px 0 0 0;
+	padding: 5px 0 0 0;
 	z-index: 7000;
 }
 .button_bg{
@@ -140,5 +175,10 @@ width: 1000%;
 height: 1000%;
 z-index: -7000;
 }
+.button_frame:first-child{ 
+ margin-left: 23px;
+}
+.button_content:hover{
+color: #3276b1;
+}
 
-    
