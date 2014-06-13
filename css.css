@@ -31,12 +31,13 @@ margin-left: -450px;
 margin-top: -325px;
 display: block;
 overflow: hidden;
+box-sizing: border-box;
 z-index: 5000;
 }
 #interface_bg{
 position: relative;
 background: #000;
-filter:alpha(opacity=55);
+filter:alpha(opacity=10);
 width: 1000%;
 height: 1000%;
 }
@@ -66,12 +67,16 @@ font-size: 15pt;
 }
         
 .interface_top_menu{
-margin: 0 0 10px 0;
-float: left;
-width: 98%;
-height: 50px;
-border: 1px solid white;
-
+    margin: 0 0 10px 0;
+    float: left;
+    width: 98%;
+    height: 80px;
+/*    border: 1px solid white;*/
+}
+.tm_divider input:nth-child(3){
+    top: 25px;
+    position: absolute;
+    color: grey;
 }
 .notice{
     margin: 0 14px 0 0;
@@ -97,7 +102,7 @@ border: 1px solid white;
     top: -155%;
     position: relative;
     background: #fff;
-    filter:alpha(opacity=10);
+    filter:alpha(opacity=15);
     width: 100%;
     height: 1000%;
     z-index: -7000;
@@ -120,7 +125,7 @@ position: relative;
 display: block;
 overflow: hidden;
 float: left;
-margin: 0 0 20px 0;
+margin: 0 0 10px 0;
 }
 .ititle_content{
 position: absolute;
@@ -147,6 +152,17 @@ filter:alpha(opacity=80);
 
 /* --- B U T T O N    C L A S S E S --- */
 
+.top_menu_buttons{
+	width: 80px;
+	height: 20px;
+    font-size: 10pt;
+    
+}
+.tm_divider{
+    float: left;
+    margin: 0 0 0 10px;
+    box-sizing: border-box;
+}
 .bottom_buttons{
 	width: 140px;
 	height: 30px;
